@@ -1,0 +1,51 @@
+# React Native / Expo
+node_modules/
+.expo/
+.expo-shared/
+npm-debug.log
+yarn-error.log
+*.expo
+*.zip
+dist/
+build/
+*.log
+
+# Android / iOS build artifacts
+android/app/build/
+ios/build/
+ios/Pods/
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Configurações locais
+.env
+.env.local
+.env.development
+.env.production
+
+# VS Code / IDE
+.vscode/
+.idea/
+*.iml
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Git
+.gitignore
+git-history-simulator.sh
+
+# .NET backend
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+packages/
