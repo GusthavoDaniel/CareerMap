@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "/MXO17Z3jGabD8AJ8GIl33KRHHnmDpY227Lxdav9pzg=",
+  "Source": "CareerMap.Recommendations.Api",
+  "BasePath": "_content/CareerMap.Recommendations.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
