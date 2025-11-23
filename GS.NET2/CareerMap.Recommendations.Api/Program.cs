@@ -3,51 +3,66 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Banco
+// ---------- Banco ----------
 builder.Services.AddDbContext<RecommendationsDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Controllers
-builder.Services.AddControllers();
+// ---------- Controllers ----------
+builder.Services.AddControllers()
+    .AddJsonOptions(o =>
+    {
+        // Se precisar serializar enums como string etc., ajuste aqui
+        // o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
 
-// Swagger
+// ---------- Swagger ----------
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// ✅ Libera CORS totalmente (para testes LAN)
+// ---------- CORS (liberado para testes LAN) ----------
+const string AllowAll = "AllowAll";
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy =>
+    options.AddPolicy(AllowAll, policy =>
         policy.AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod());
 });
 
+// ---------- Kestrel ouvindo na rede (0.0.0.0:5097) ----------
+builder.WebHost.ConfigureKestrel(o =>
+{
+    o.ListenAnyIP(5097); // HTTP aberto na LAN
+    // Se quiser HTTPS externo depois, configure outro o.Listen com certificado
+});
+
 var app = builder.Build();
 
-// ✅ Pipeline
+// ---------- Pipeline ----------
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// ❌ Remova o HTTPS redirection (causa erro no iPhone)
- // app.UseHttpsRedirection();
+// ⚠️ NÃO redirecionar para HTTPS em testes mobile (certificados causam erro no Android/iOS)
+// app.UseHttpsRedirection();
 
-app.UseCors();
+app.UseCors(AllowAll);
 app.UseAuthorization();
+
 app.MapControllers();
 
-// ✅ Endpoint raiz de teste
+// ---------- Endpoints de teste ----------
 app.MapGet("/", () => Results.Ok("API Online"));
+app.MapGet("/health", () => Results.Ok(new { status = "healthy", ts = DateTime.UtcNow }));
 
-// Migrations automáticas (opcional)
+// ---------- Migrations automáticas (opcional) ----------
 if (app.Environment.IsDevelopment())
 {
     using var scope = app.Services.CreateScope();
-    var dbContext = scope.ServiceProvider.GetRequiredService<RecommendationsDbContext>();
-    dbContext.Database.Migrate();
+    var db = scope.ServiceProvider.GetRequiredService<RecommendationsDbContext>();
+    db.Database.Migrate();
 }
 
 app.Run();

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CareerMap.Recommendations.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e304a0ec8becf0d62657c4f3ac0c4eadefe63372")]
 [assembly: System.Reflection.AssemblyProductAttribute("CareerMap.Recommendations.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CareerMap.Recommendations.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
