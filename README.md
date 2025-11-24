@@ -3,12 +3,12 @@
 ## Mobile Application Development (React Native)
 
 **Integrantes do Grupo:**
-*   [Nome do Integrante 1] - RM [RM do Integrante 1]
-*   [Nome do Integrante 2] - RM [RM do Integrante 2]
-*   [Nome do Integrante 3] - RM [RM do Integrante 3]
+*   [Gusthavo Daniel de Souza] - RM [554681]
+*   [Lucas Miranda Leite - RM [555161]
+*   [Guilherme Damasio Roselli] - RM [555873]
 
 **Link para o Vídeo no YouTube:**
-[URL do Vídeo de Demonstração - A ser preenchido após a gravação]
+[URL do Vídeo de Demonstração -](https://youtu.be/HPWlwBiBB5U)]
 
 **Link do Repositório GitHub:**
 [URL do Repositório - A ser preenchido]
