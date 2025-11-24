@@ -8,7 +8,7 @@ import {
   Alert,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { generateTrailDotNet, generateTrailPython } from '../../api/endpoints';
+import { generateTrailDotNet as generateTrail } from '../../api/endpoints'; // Renomeado internamente
 import { GlobalStyles, Typography, Colors } from '../../styles/theme';
 import Button from '../../components/common/Button';
 
@@ -75,32 +75,18 @@ const RecommenderScreen = ({ navigation }) => {
   const [selectedFilter, setSelectedFilter] = useState('all');
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleGenerateTrail = async (usePythonApi = false) => {
+  const handleGenerateTrail = async () => {
     setIsLoading(true);
     try {
-      const apiCall = usePythonApi ? generateTrailPython : generateTrailDotNet;
+      const params = {
+        areaInteresse: 'Desenvolvimento Full Stack',
+        nivelAtual: 'Júnior',
+        competencias: ['APIs REST', 'Azure'],
+      };
 
-      const params = usePythonApi
-        ? {
-            nome: 'Aluno FIAP',
-            interesses: ['Cloud Computing', 'Data Science'],
-            experiencia: 'Estudante',
-            prefere_areas: ['Back-end', 'DevOps'],
-            horas_por_semana: 15,
-          }
-        : {
-            areaInteresse: 'Desenvolvedor Full Stack',
-            nivelAtual: 'Júnior',
-            competencias: ['APIs REST', 'Azure'],
-          };
-
-      const res = await apiCall(params);
-
-      // 🔒 Suporta ambos formatos: `{ data }` OU `data`
+      const res = await generateTrail(params);
       const trail = res?.data ?? res;
-      if (!trail) {
-        throw new Error('Resposta vazia da API.');
-      }
+      if (!trail) throw new Error('Resposta vazia da API.');
 
       navigation.navigate('TrailRoadmap', { trail });
     } catch (error) {
@@ -145,7 +131,7 @@ const RecommenderScreen = ({ navigation }) => {
       </View>
 
       <Text style={styles.subtitle}>
-        Simulação de integração com a API de Recomendações (.NET / Python - Extra)
+        Simulação de integração com a API de Recomendações
       </Text>
       <Text style={styles.body}>
         Esta tela apresenta uma lista dinâmica de trilhas, cursos e vagas
@@ -161,19 +147,11 @@ const RecommenderScreen = ({ navigation }) => {
         <Text style={styles.generateTrailSubtitle}>
           Simule a geração de uma trilha com base em seus interesses atuais.
         </Text>
+
         <Button
-          title="Gerar Trilha (API .NET)"
+          title="Gerar Trilha"
           icon="rocket-outline"
-          onPress={() => handleGenerateTrail(false)}
-          isLoading={isLoading}
-          disabled={isLoading}
-          style={styles.generateTrailButton}
-        />
-        <Button
-          title="Gerar Trilha (API Python - Extra)"
-          icon="flask-outline"
-          onPress={() => handleGenerateTrail(true)}
-          type="secondary"
+          onPress={handleGenerateTrail}
           isLoading={isLoading}
           disabled={isLoading}
           style={styles.generateTrailButton}
@@ -239,7 +217,6 @@ const RecommendationCard = ({
       ? 'Curso recomendado'
       : 'Vaga alvo sugerida';
 
-  // 🔒 Proteções de render (evita crash com dados indefinidos)
   const safeTags = Array.isArray(tags) ? tags : [];
   const hasMatch = typeof match === 'number';
 
@@ -301,7 +278,7 @@ const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 20,
     borderLeftWidth: 4,
-    borderLeftColor: Colors.secondary,
+    borderLeftColor: Colors.primary,
   },
   generateTrailTitle: {
     ...Typography.subtitle,

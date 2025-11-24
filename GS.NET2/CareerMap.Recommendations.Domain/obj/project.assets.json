@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj",
+      "projectUniqueName": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj",
       "projectName": "CareerMap.Recommendations.Domain",
-      "projectPath": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj",
+      "projectPath": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj",
       "packagesPath": "C:\\Users\\gusth\\.nuget\\packages\\",
-      "outputPath": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\obj\\",
+      "outputPath": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

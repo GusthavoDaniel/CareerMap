@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CareerMap.Recommendations.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+137ff51be35c84128da602d957db8fb7a20754ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("CareerMap.Recommendations.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CareerMap.Recommendations.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

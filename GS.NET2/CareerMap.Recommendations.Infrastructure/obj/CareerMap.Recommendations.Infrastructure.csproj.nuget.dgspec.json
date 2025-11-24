@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\CareerMap.Recommendations.Infrastructure.csproj": {}
+    "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\CareerMap.Recommendations.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj": {
+    "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj",
+        "projectUniqueName": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj",
         "projectName": "CareerMap.Recommendations.Domain",
-        "projectPath": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj",
+        "projectPath": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj",
         "packagesPath": "C:\\Users\\gusth\\.nuget\\packages\\",
-        "outputPath": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\obj\\",
+        "outputPath": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\CareerMap.Recommendations.Infrastructure.csproj": {
+    "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\CareerMap.Recommendations.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\CareerMap.Recommendations.Infrastructure.csproj",
+        "projectUniqueName": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\CareerMap.Recommendations.Infrastructure.csproj",
         "projectName": "CareerMap.Recommendations.Infrastructure",
-        "projectPath": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\CareerMap.Recommendations.Infrastructure.csproj",
+        "projectPath": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\CareerMap.Recommendations.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\gusth\\.nuget\\packages\\",
-        "outputPath": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\obj\\",
+        "outputPath": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj": {
-                "projectPath": "D:\\mobilefoigs\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj"
+              "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj": {
+                "projectPath": "D:\\mobilefoigs\\MOBILEGSCARRER\\GS.NET2\\CareerMap.Recommendations.Domain\\CareerMap.Recommendations.Domain.csproj"
               }
             }
           }
