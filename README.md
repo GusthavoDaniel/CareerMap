@@ -11,7 +11,7 @@
 [URL do Vídeo de Demonstração -](https://youtu.be/HPWlwBiBB5U)]
 
 **Link do Repositório GitHub:**
-[URL do Repositório - A ser preenchido]
+[URL do Repositório -](https://github.com/GusthavoDaniel/CareerMap)]
 
 ## Descrição da Solução Global Solution
 
@@ -44,8 +44,6 @@ O aplicativo mobile desenvolvido nesta disciplina é o ponto de acesso principal
 | **3. Sistema de Autenticação** | 20 pts | ✅ Completo (Login, Cadastro, Recuperação) |
 | **4. Estilização com identidade visual personalizada** | 5 pts | ✅ Completo (Design moderno e profissional) |
 | **5. Arquitetura do Código** | 20 pts | ✅ Completo (Organização clara e padronizada) |
-| **6. Gravação de vídeo com todas as funcionalidades** | 10 pts | ⏳ A fazer |
-| **7. Publicação do app (Firebase App Distribution)** | 5 pts | ⏳ A fazer |
 | **Total** | **100 pts** | |
 
 ## Telas Implementadas
@@ -162,11 +160,6 @@ src/
 - KPIs rápidos (evolução, ranking, sequência de estudos)
 - Score personalizado
 
-### 4. Integração com IA (Mock)
-- CareerBot para orientação profissional
-- Recomendador inteligente de trilhas
-- Explicações textuais geradas por IA
-- Sugestões personalizadas baseadas no perfil
 
 ## Tecnologias Utilizadas
 
